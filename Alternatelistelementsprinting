@@ -1,0 +1,19 @@
+t1=int(input())
+a1=list(map(str,(input().split(" "))))
+t2=int(input())
+a2=list(map(str,(input().split(" "))))
+
+a=min(t1,t2)
+b=max(t1,t2)
+
+for i in range(a):
+    print(a1[i], end=" ")
+    print(a2[i], end=" ")
+
+if t1-t2 > 0:
+    for i in range(a,t1):
+        print(a1[i], end=" ")
+elif t1-t2 < 0:
+    for i in range(a,t2):
+        print(a2[i], end=" ")
+
